@@ -392,10 +392,6 @@ nav ul li a:hover{
     border-radius: 20px;
 }
 
-.Services i:hover {
-    background: #FF26B9;
-}
-
 .container .row{
     display: flex;
     gap: 30px;
@@ -420,7 +416,6 @@ nav ul li a:hover{
     text-align: center;
     background-color: transparent;
     border-radius: 20px;
-    /* border:2px solid #FFf; */
     width: 320px;
     transition: ease-in all 0.5s;
     margin-bottom: 80px;
@@ -748,11 +743,12 @@ footer .row-h2 p span {
     padding: 40px;
 }
 
-.service-logs i{
+.service-logs .contact i{
     width: 100px;
     height: 100px;
     border-radius: 50px;
     display: inline-block;
     padding-top: 19px;
+    filter: grayscale();
 }
 /* logs end */
