@@ -7,6 +7,8 @@
     <script src="https://kit.fontawesome.com/5b702f1e5f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/resp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <body>
     <section class="nav-hero">
         <header class="header">
@@ -21,9 +23,9 @@
             </div>
              <nav class="nav">
                 <ul>
-                    <li class="active"><a href="indexb.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="logs.html"> LOGS </a></li>
-                    <li><a href="cc.html"> CC/DUMP/TRACK</a></li>
+                    <li><a href="cct.html"> CC/DUMP/TRACK</a></li>
                     <li> <a href="flash.html">FLASHING SOFTWARE</a></li>
                     <li> <a href="smhack.html">SM HACK</a></li>
                 </ul>
@@ -52,8 +54,8 @@
                  </div>
                 </div>
                 <div class="star star-for-img">
-                    <i class="fa-solid fa-star shining-traffic"></i>
-                    <i class="fa-solid fa-star shining-traffic"></i>
+                    <i class="fa-solid fa-star shining-traffic-2"></i>
+                    <i class="fa-solid fa-star shining-traffic-2"></i>
                 </div>
                 <div class="hero-img">
                     <img src="./assets/img/man-wearing-smart-glasses-touching-virtual-screen 1.png" alt="VR Image" class="main-image">
@@ -101,35 +103,34 @@
          </div>
          <div class="row">
             <div class="col">
-                <i style="background-image: url(assets/img/cc.jpeg); background-size: contain;"></i>
+                <i style="background-image: url(assets/img/cc.jpeg); background-size: 100% 60vh; background-repeat: no-repeat;"></i>
                 <h3> SQR 400 Software</h3>
             </div>
             <div class="col">
-                <i style="background-image: url(assets/img/logs.png); background-size: contain;"></i>
+                <i style="background-image: url(assets/img/logs.png); background-size: 100% 60vh; background-repeat: no-repeat;"></i>
                 <h3>Western Union Hack</h3>
             </div>
             <div class="col">
-                <i style="background-image: url(assets/img/paypal-500px-458x458.png); background-size: contain;"></i>
+                <i style="background-image: url(assets/img/paypal-500px-458x458.png); background-size: 100% 60vh; background-repeat: no-repeat;"></i>
                 <h3>Paypal Transfer</h3>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <i style="background-image: url(assets/img/sqr.jpeg); background-size: contain;"></i>
+                <i style="background-image: url(assets/img/sqr.jpeg); background-size: 100% 60vh; background-repeat: no-repeat;"></i>
                 <h3>Amazon Carding</h3>
             </div>
             <div class="col">
-                <i style="background-image: url(assets/img/wu-356x356.jpg); background-size: contain;"></i>
+                <i style="background-image: url(assets/img/wu-356x356.jpg); background-size: 100% 60vh; background-repeat: no-repeat;"></i>
                 <h3>Credit card hack</h3>
             </div>
             <div class="col">
-                <i style="background-image: url(assets/img/Amazon-1-356x304.jpg); background-size: contain;"></i>
+                <i style="background-image: url(assets/img/Amazon-1-356x304.jpg); background-size: 100% 60vh; background-repeat: no-repeat;"></i>
                 <h3>Logs</h3>
             </div>
          </div>
     </div>
  </section>
- 
 
     <!-- Hosting -->
 <div class="host-why">
@@ -163,13 +164,15 @@
            </div>
         </div>
      </div>
+     <i class="fa-solid fa-crow"></i>
+
      <!-- end Hosting -->
 
     <section id="why" class="why">
         <div class="container">
             <div class="row-h2">
-                <h2>Reviews</h2>
-                <p>Read below reviews from our buyers</p>
+                <h2>Testimonials</h2>
+                <p>Read below testimonials from our buyers</p>
              </div>
              <div class="row">
                 <div class="col">
@@ -190,13 +193,14 @@
              </div>
         </div>
     </section>
+    
 </div>
 
 <div class="contact-footer">
     <section class="contact">
         <div class="container">
             <div class="row-h2">
-                <h2>Leave Your Review</h2>
+                <h2>Leave Your Testimonial</h2>
             </div>
             <form action="">
                 <div class="col">
@@ -230,6 +234,23 @@
        document.getElementById('date').innerHTML = new Date().getFullYear();
     }
  </script>
+
+<script>
+    const icon = document.getElementById('crowIcon');
+    let position = 0;
+  
+    function moveIcon() {
+      position += 5; // Moves the icon 5px to the right each time
+      icon.style.transform = `translateX(${position}px)`;
+  
+      if (position < 100) {
+        requestAnimationFrame(moveIcon); // Continues moving
+      }
+    }
+  
+    // Start moving the icon when the page loads or when triggered
+    moveIcon();
+  </script>
 
 </body>
 </html>

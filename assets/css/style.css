@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Heebo:wght@100..900&family=Hepta+Slab:wght@1..900&family=Orbitron:wght@400..900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@400;600&family=Titan+One&display=swap');
+
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Manrope;
 }
 
 html {
@@ -82,8 +84,6 @@ img {
       color: red;
     }
   }
-  
-  /* Shining effect (glow) */
 
   @keyframes shine {
     0% {
@@ -96,8 +96,12 @@ img {
       text-shadow: 0 0 5px  #ff26b9, 0 0 10px rgba(255, 255, 255, 0.4);
     }
   }
-  
 
+  .shining-traffic-2 {
+    animation: trafficLight 2s infinite, shine 1.5s ease-in-out;
+  }
+  
+  
 /* ==== ALL STARTS END ==== */
 
 /* ==== BACKGROUNDS START==== */
@@ -175,6 +179,19 @@ nav ul li a{
 nav ul li a:hover{
     color: #ff26b9;
 }
+
+.active{
+    background: #FF26B9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bolder;
+}
+
+.active{
+    color: #FF26B9;
+}
+
 /* HEADER END */
 
 /* HERO SECTION START */
@@ -362,14 +379,13 @@ nav ul li a:hover{
     text-align: center;
     font-size: 40px;
     color: #fff;
-    font-family: Orbitron;
     margin-bottom: 5rem;
 }
 
 .Services i {
-    background: #fff;
-    width: 100%;
-    height: 55vh;
+    /* background: #fff; */
+    width: 320px;
+    height: 380px;
     object-fit: cover;
     display: inline-block;
     padding-top: 19px;
@@ -377,7 +393,7 @@ nav ul li a:hover{
 }
 
 .Services i:hover {
-    background: #ddd;
+    background: #FF26B9;
 }
 
 .container .row{
@@ -389,7 +405,6 @@ nav ul li a:hover{
 .Services {
     margin-top: 90px;
     padding: 60px 0;
-    font-family: Poppins;
 }
 
 .Services .col h3 {
@@ -399,7 +414,6 @@ nav ul li a:hover{
     color: #fff;
     display: block;
     font-weight: 500;
-    font-family: Orbitron;
 }
 
 .Services .col {
@@ -574,7 +588,6 @@ nav ul li a:hover{
     color: #fff;
     display: block;
     font-weight: 500;
-    font-family: Orbitron;
 }
 
 .why .col p {
@@ -607,9 +620,26 @@ form{
 
 }
 
+.container .form-h2{
+    margin: 0;
+}
+
+form input {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 25px;
+    padding: 0px 19px;
+    color: #999999 !important;
+    border: #d0cccc solid 1px;
+    border-radius: 15px;
+    padding-top: 12px;
+    margin-top: 40px;
+    background: #e9e6ec;
+}
+
 form .textarea {
-    width: 500px;
-    height: 250px;
+    width: 450px;
+    height: 220px;
     margin-bottom: 25px;
     padding: 0px 19px;
     color: #999999 !important;
@@ -645,7 +675,6 @@ footer a{
 
 footer {
     width: 100%;
-    font-family: Poppins;
     margin-top: 50px;
 }
 
@@ -684,3 +713,46 @@ footer .row-h2 p span {
     line-height: 30px;
 }
 
+
+@keyframes flyCrow {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(100px, -50px) rotate(-10deg);
+    }
+    50% {
+        transform: translate(200px, -100px) rotate(10deg);
+    }
+    75% {
+        transform: translate(300px, -150px) rotate(-10deg);
+    }
+    100% {
+        transform: translate(400px, -200px) rotate(0deg);
+    }
+}
+
+.fa-crow {
+    font-size: 50px; /* Adjust icon size */
+    color: #FF26B9;
+    position: relative;
+    animation: flyCrow 5s infinite linear; /* Adjust duration and loop */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5); 
+
+}
+
+
+/* logs start */
+.service-logs .col{
+    border: #cecfd7 solid 2px;
+    padding: 40px;
+}
+
+.service-logs i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: inline-block;
+    padding-top: 19px;
+}
+/* logs end */
