@@ -417,6 +417,45 @@ form .send{
     }
 /* end */
 
+.scene {
+    height: 100px;
+    width: 100px;
+    background-size: 10px 100px;
+    margin-bottom: 30rem;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+}
+
+.scene {
+    perspective: 3000px;
+}
+
+
+
+.why .row-h2 h2{
+    font-size: 45px;
+}
+
+.why .row-h2 p{
+    font-size: 25px;
+}
+
+.Services i{
+    width: 100%;
+    /* height: 100px; */
+}
+
+.service-logs .row-h2 h2{
+    font-size: 33px;
+}
+
+.service-logs .row-h2 p{
+    font-size: 25px;
+}
+
     .container .row{
         display: block;
     }
@@ -466,6 +505,10 @@ form .send{
         padding: 55px 15px;
     }
 
+    .contact-footer .row-h2 h2{
+        font-size: 40px;
+    }
+
     .form-h2 h2{
         font-size: 40px;
     }
@@ -476,6 +519,15 @@ form .send{
 
     form .textarea{
         width: 100%;
+    }
+
+    footer .row-h2 span{
+        font-size: 20px;
+    }
+
+    footer .row-h2 p{
+        font-size: 20px;
+        line-height: 1px;
     }
 
 }
