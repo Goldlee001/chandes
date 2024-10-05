@@ -743,7 +743,15 @@ footer .row-h2 p span {
     padding: 40px;
 }
 
-.service-logs .contact i{
+.service-logs  i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: inline-block;
+    padding-top: 19px;
+}
+
+.service-logs .logs-img i{
     width: 100px;
     height: 100px;
     border-radius: 50px;
