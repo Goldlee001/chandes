@@ -68,6 +68,15 @@ img {
   .shining-traffic {
     animation: trafficLight 3s infinite, shine 1.5s ease-in-out infinite;
   }
+
+  
+  .shining-traffic-2 {
+    animation: trafficLight 2s infinite, shine 1.5s ease-in-out;
+  }
+
+  .shining-traffic-3 {
+    animation: trafficLight 4s infinite, shine 1.5s ease-in-out;
+  }
   
   /* Traffic light effect (color changes) */
   @keyframes trafficLight {
@@ -79,6 +88,9 @@ img {
     }
     66% {
       color:  #ff26b9;
+    }
+    75% {
+      color: #1900ff;
     }
     100% {
       color: red;
@@ -92,15 +104,13 @@ img {
     50% {
       text-shadow: 0 0 20px  #ff26b9, 0 0 30px rgba(255, 255, 255, 1);
     }
+    10% {
+      text-shadow: 0 0 5px  #2647ff, 0 0 10px rgba(255, 255, 255, 0.4);
+    }
     100% {
       text-shadow: 0 0 5px  #ff26b9, 0 0 10px rgba(255, 255, 255, 0.4);
     }
   }
-
-  .shining-traffic-2 {
-    animation: trafficLight 2s infinite, shine 1.5s ease-in-out;
-  }
-  
   
 /* ==== ALL STARTS END ==== */
 
