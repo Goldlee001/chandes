@@ -770,3 +770,83 @@ footer .row-h2 p span {
     filter: grayscale();
 }
 /* logs end */
+
+/* flash start */
+.why .rw-fsh .col{
+    width: 90%;
+    height: 165vh;
+    margin-bottom: 80px;
+}
+.why .rw-fsh .col img{
+    width: 100%;
+    height: 100vh;
+}
+
+.why .rw-fsh .co2{
+    width: 90%;
+    padding-top: 30px;}
+
+/* flash start */
+
+/* table start */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #7F8486;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th {
+    padding: 15px;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+}
+
+tbody tr {
+    background-color: #fff;
+}
+
+td {
+    padding: 11px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table {
+    border-spacing: 0;
+}
+
+table, td, th {
+    border: 1px solid transparent;
+}
+
+td[data-label="Amount"] {
+    color: #7F8486;
+    font-weight: bold;
+}
+
+table {
+    margin: 20px auto;
+    width: 87%;
+}
+
+/* table end */

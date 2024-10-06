@@ -300,11 +300,11 @@
     padding: 20px;
 }
 
-.service-logs i{
-    width: 100%;
-    height: 130px;
-    border-radius: 50%;
-}
+    .service-logs i{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
 /* logs end */
 form p {
     padding: 0px 30px;
@@ -312,6 +312,10 @@ form p {
 }
 
 form {
+    margin-bottom: -58%;
+}
+
+.logs-cc{
     margin-bottom: -58%;
     height: 80vh;
 }
@@ -332,10 +336,21 @@ form .textarea {
 form .send{
     margin-top: 30px;
 }
+
+#hero-section{
+    width: 100%;
+    display: flex;
+    gap: 70px;
+}
+
 }
 
 
 @media (max-width: 575px) {
+
+    body{
+        padding:0 28px;
+    }
 
     .logo-menu{
         width: 100%;
@@ -399,7 +414,6 @@ form .send{
     .text-bg h1 {
         font-size: 35px;
         line-height: 55px;
-        /* padding-bottom: 18px; */
     }
 
     .text-bg span {
@@ -445,7 +459,6 @@ form .send{
 
 .Services i{
     width: 100%;
-    /* height: 100px; */
 }
 
 .service-logs .row-h2 h2{
@@ -529,5 +542,64 @@ form .send{
         font-size: 20px;
         line-height: 1px;
     }
+
+    /* flsh start */
+#hero-section{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#hero-section .hero-img figure{
+    width: 200px;
+    height: 300px;
+}
+
+    .why .rw-fsh .col{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .why .rw-fsh .col i img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .why-fsh .rw-fsh .col h3{
+        font-size: 20px;
+        left: 1px;
+        padding: 10px;
+    }
+
+    .rw-fsh-2 .col{
+        width: 100%;
+        height: 30vh;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .why-fsh .row-h2 h2{
+        font-size: 30px;
+    }
+
+    .rw-fsh-2 .col i img{
+        height: 100%;
+        border-radius: 20px;  
+    }
+
+    /* flsh end */
+
+    /* table start */
+
+table {
+    width: 100%;
+    font-size: 0.6em;
+    margin: 0;
+}
+
+td, th {
+    padding: 4px;
+}
+    /* table end */
 
 }
