@@ -348,7 +348,7 @@ form .send{
 
 @media (max-width: 575px) {
 
-    body{
+    .layouts{
         padding:0 28px;
     }
 
@@ -571,7 +571,7 @@ form .send{
         padding: 10px;
     }
 
-    .rw-fsh-2 .col{
+    .why .rw-fsh-2 .col{
         width: 100%;
         height: 30vh;
         padding: 10px;

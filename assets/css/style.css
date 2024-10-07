@@ -17,6 +17,9 @@ body{
     font-family: 'Rajdhani', sans-serif;
     line-height: 1.80857;
     font-weight: normal;
+}
+
+.layouts{
     padding: 0 40px;
 }
 
@@ -782,9 +785,10 @@ footer .row-h2 p span {
     height: 100vh;
 }
 
-.why .rw-fsh .co2{
+.why .rw-fsh-2 .col{
     width: 90%;
-    padding-top: 30px;}
+    padding-top: 30px;
+}
 
 /* flash start */
 
