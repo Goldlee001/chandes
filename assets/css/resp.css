@@ -94,14 +94,22 @@
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
+    .text-bg a{
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     /* hero-section start */
 
     .Services{
         margin-top: 0;
+        padding: 30px;
     }
 
     .Services i{
         width: 100%;
+        height: 30vh;
     }
 
     .navigation.navbar-dark .navbar-nav .nav-link {
@@ -283,6 +291,7 @@
     /* Services start */
     .Services{
         margin-top: 20rem;
+        padding: 30px;
     }
     
     .container .row-h2{
