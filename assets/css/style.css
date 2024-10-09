@@ -441,6 +441,29 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
+/* HIDDEN START */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+    
+}
+/* HIDDEN END */
+
 /** Services section **/
 
 /*  */
