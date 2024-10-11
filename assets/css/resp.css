@@ -182,6 +182,11 @@
 
 
     /* flash start */
+.text-img{
+    margin-left: 0;
+    width: 500px;
+}
+
     .why .rw-fsh .col{
         width: 70%;
         height: 85vh;
@@ -484,13 +489,26 @@ form .send{
         margin-bottom: 30px;
     }
 
-    .hero-img{
-        height: 347px;
+    .hero-img {
+        width: 46rem;
+        height: 30rem;
+        position: relative;
+        padding-bottom: 90px;
+        font-family: Orbitron, sans-serif;
+        overflow: hidden; 
+    }
+    
+    .hero-img img{
+        width: 46rem;
+        height: 30rem;
     }
 
-    .hero-img img{
-        height: 347px;
-    }
+    /* Shaking human head */
+#head {
+    top: 10rem;
+    right: -10rem;
+}
+    
 /* end */
 
 .scene {

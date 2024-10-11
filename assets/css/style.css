@@ -820,6 +820,12 @@ footer .row-h2 p span {
 /* logs end */
 
 /* flash start */
+.text-img{
+    margin-left: 14rem;
+    height: 100%;
+     width: 700px;
+}
+
 .why .rw-fsh .col{
     width: 70%;
     height: 155vh;
