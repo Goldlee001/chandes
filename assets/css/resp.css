@@ -102,7 +102,7 @@
     }
 
     #head {
-        right: -14rem;
+        display: none;
     }
 
     /* hero-section start */
@@ -495,25 +495,9 @@ form .send{
     }
 
     .hero-img {
-        width: 46rem;
-        height: 30rem;
-        position: relative;
-        padding-bottom: 90px;
-        font-family: Orbitron, sans-serif;
-        overflow: hidden; 
+        display: none;
     }
-    
-    .hero-img img{
-        width: 46rem;
-        height: 30rem;
-    }
-
     /* Shaking human head */
-#head {
-    top: 10rem;
-    right: -10rem;
-}
-    
 /* end */
 
 .scene {
@@ -540,6 +524,10 @@ form .send{
 
 .why .row-h2 p{
     font-size: 25px;
+}
+
+.Services {
+    margin-top: 0;
 }
 
 .Services i{
