@@ -101,8 +101,24 @@
         padding-bottom: 0;
     }
 
+    .hero-img {
+        width: 130rem;
+        height: 40rem;
+        position: relative;
+        padding-bottom: 90px;
+        font-family: Orbitron, sans-serif;
+        overflow: hidden; 
+    }
+    
+    .hero-img img{
+        width: 130rem;
+        height: 40rem;
+    }
+    
+    /* Shaking human head */
     #head {
-        display: none;
+        top: 16rem;
+        right: -15rem;
     }
 
     /* hero-section start */
@@ -117,9 +133,6 @@
         height: 30vh;
     }
 
-    .navigation.navbar-dark .navbar-nav .nav-link {
-        padding: 0 20px;
-    }
     .text-bg h1 {
         padding-top: 0px;
         font-size: 44px;
@@ -185,6 +198,12 @@
         margin-bottom: -92%;
     }
 
+/* logs start */
+.service-logs .logs-img i{
+    padding-top: 0px;
+}
+/* logs end */
+
 
     /* flash start */
 .text-img{
@@ -211,6 +230,9 @@
         padding-top: 30px;
     }
     /* flash end */
+
+
+    
 
 }
 
