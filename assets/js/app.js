@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menu.style.display = 'block'
     });
 });
-
+date.innerHTML = new Date().getFullYear();
 let randomArray = [
     'Thank you for the tracks', 'Gotten the logs and they are perfect. Thanks', 'The SMTP wasn\'t all that stable but it\'s worth it', 'First time trying I hope the views stays on my TikTok', 'Please can you send me the full documentation of the SQR400 I purchased',
     'Thanks the software is great. I love it but why does it need strong internet connection to get more cool operation.', 'Please why did it take long for the CC to stampigate', 'Great track 2 dump', 'I will still come purchase more logs. You guys are Great',
@@ -33,14 +33,20 @@ let randomArray = [
  document.getElementById("feedbackb").innerHTML = randomElementb;
  document.getElementById("feedbackc").innerHTML = randomElementc;
 
- function review() {
-    if (!$("#msg").val().trim()) {
-       alert("Please enter your review.");
+ function review(e) {
+    e.preventDefault();
+    const msg = document.querySelector("#msg").value;
+    if (!msg.trim()) {
+       swal("Error", "Please enter a review", "error");
+       msg = "";
        return;
     }
-    alert("Your review has been successfully submitted.")
+    randomArray.push(msg);
+    msg = "";
+    swal("Good job!", "Your review has been submitted successfully.", "success");
  }
-
+const form = document.querySelector("form");
+form.addEventListener("submit", review);
 
  const observer = new IntersectionObserver((entries)=> {
     entries.forEach((entry) => {
@@ -58,4 +64,11 @@ let randomArray = [
  hiddenElements.forEach((el) => observer.observe(el));
 
 
- 
+ addEventListener('load', ()=>{
+    const preloader = document.getElementById('preloader');
+    const content = document.querySelector('.content');
+    setTimeout(() => {
+        preloader.classList.add('fade-out');
+        content.style.display = 'block';
+    }, 1000);
+})

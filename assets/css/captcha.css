@@ -15,8 +15,8 @@ html,body {height:100%;}
 	display:flex;
 	justify-content:center;
 	align-items:center;
-    margin: 0 auto;
-    padding-top: 20px;
+    margin-top: 40vh;
+    padding: 20px;
 }
 
 @media screen and (max-width: 500px) {
@@ -82,7 +82,7 @@ input[type="checkbox"]+.checkmark>span:after {
 	display:block;
 	height:3px;
 	bottom:0;left:0;
-	background-color:#029f56;
+	background-color:#ca22a6;
 }
 input[type="checkbox"]+.checkmark>span:before {
 	content:'';
@@ -90,7 +90,7 @@ input[type="checkbox"]+.checkmark>span:before {
 	display:block;
 	width:3px;
 	bottom:0;right:0;
-	background-color:#029f56;
+	background-color:#ca22a6;
 }
 input[type="checkbox"]:checked+.checkmark { 
 	animation:2s spin forwards;
