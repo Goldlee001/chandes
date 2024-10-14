@@ -82,7 +82,7 @@ input[type="checkbox"]+.checkmark>span:after {
 	display:block;
 	height:3px;
 	bottom:0;left:0;
-	background-color:#ca22a6;
+	background-color:#0de92a;
 }
 input[type="checkbox"]+.checkmark>span:before {
 	content:'';
@@ -90,7 +90,7 @@ input[type="checkbox"]+.checkmark>span:before {
 	display:block;
 	width:3px;
 	bottom:0;right:0;
-	background-color:#ca22a6;
+	background-color:#10e93f;
 }
 input[type="checkbox"]:checked+.checkmark { 
 	animation:2s spin forwards;
