@@ -309,14 +309,14 @@ nav ul li a:hover{
     top: 16rem;
     right: -30rem;
     transform: translate(-50%, -50%);
-    animation: shake 2s infinite;
+    animation: shake 2.5s cubic-bezier(0.6, 0.07, 0.19, 0.97) infinite;;
 }
 
 @keyframes shake {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
-    25% { transform: translate(-49%, -51%) rotate(-2deg); }
+    25% { transform: translate(-49.5%, -50.5%) rotate(-1deg); }
     50% { transform: translate(-50%, -50%) rotate(0deg); }
-    75% { transform: translate(-51%, -49%) rotate(2deg); }
+    75% { transform: translate(-50.5%, -49.5%) rotate(1deg); }
     100% { transform: translate(-50%, -50%) rotate(0deg); }
 }
 

@@ -28,14 +28,15 @@ let randomArray = [
  let randomElement = randomArray[Math.floor(Math.random() * randomArray.length)];
  let randomElementb = randomArray[Math.floor(Math.random() * randomArray.length)];
  let randomElementc = randomArray[Math.floor(Math.random() * randomArray.length)];
-
- document.getElementById("feedbacka").innerHTML = randomElement;
- document.getElementById("feedbackb").innerHTML = randomElementb;
- document.getElementById("feedbackc").innerHTML = randomElementc;
+if(document.getElementById("feedbacka")){
+    document.getElementById("feedbacka").innerHTML = randomElement;
+    document.getElementById("feedbackb").innerHTML = randomElementb;
+    document.getElementById("feedbackc").innerHTML = randomElementc;
+}
 
  function review(e) {
     e.preventDefault();
-    const msg = document.querySelector("#msg").value;
+    let msg = document.querySelector("#msg").value;
     if (!msg.trim()) {
        swal("Error", "Please enter a review", "error");
        msg = "";
@@ -45,12 +46,11 @@ let randomArray = [
     msg = "";
     swal("Good job!", "Your review has been submitted successfully.", "success");
  }
-const form = document.querySelector("form");
+const form = document.querySelector("#form");
 form.addEventListener("submit", review);
 
  const observer = new IntersectionObserver((entries)=> {
     entries.forEach((entry) => {
-        console.log(entry)
         if(entry.isIntersecting) {
             entry.target.classList.add('show');
         }else{

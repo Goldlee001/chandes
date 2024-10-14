@@ -5,17 +5,25 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Dark Numb</title>
-	<link rel="icon" href="./assets/img/anon_2.gif" type="image/gif">
-   
+   <link rel="icon" href="./assets/img/anon_2.gif" type="image/gif">
+
    <script src="https://kit.fontawesome.com/5b702f1e5f.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="./assets/css/preloader.css">
    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+   <div id="preloader">
+      <div class="loader">
+          <p class="blinking-cursor">DARKNUMB</p>
+          <div class="progress-bar"></div>
+      </div>
+  </div>
+   <div class="content">
 
-   <section id="container" class="layouts">
-      <header class="header logs-cc-fsh">
+      <section id="container" class="layouts">
+         <header class="header logs-cc-fsh">
             <div class="logo-menu">
                <div class="logo">
                   <a href="./home.html">Dark Numb</a>
@@ -34,9 +42,9 @@
                   <li> <a href="./smhack.html">SM HACK</a></li>
                </ul>
             </nav>
-      </header>
-   
-          <div id="service" class="Services service-logs">
+         </header>
+
+         <div id="service" class="Services service-logs">
             <div class="container logs-img" id="container">
                <div class="row-h2">
                   <h2>LOGS/TRACK/DUMP</h2>
@@ -126,46 +134,46 @@
                </div>
             </div>
          </div>
-   </section>
-   
+      </section>
 
-         <div class="contact-footer  layouts">
-            <section class="contact">
-               <div class="container">
-                   <div class="row-h2">
-                       <h2>Leave Your Testimonial</h2>
-                   </div>
-                   <form>
-                       <div class="col">
-                           <textarea id="msg" class="textarea" placeholder="Message" type="text" name="Message"
-                               rows="8"></textarea>
-                       </div>
-                       <div class="col">
-                           <button class="send">Send</button>
-                       </div>
-                   </form>
+
+      <div class="contact-footer  layouts">
+         <section class="contact">
+            <div class="container">
+               <div class="row-h2">
+                  <h2>Leave Your Testimonial</h2>
                </div>
-           </section>
-    
-            <footer>
-                <div class="container">
-                    <div class="row-h2">
-                        <h3>Contact now</h3>
-                        <span>Darknumb@darknumb.io</span>
-                    </div>
-                    <div class="row-h2">
-                        <p>© 2020 - <span id="date"></span> All Rights Reserved. <a
-                                href="https://darknumb.io/">Darknumb</a>
-                        </p>
-                    </div>
-                </div>
-            </footer>
-        </div>
- 
+               <form id="form">
+                  <div class="col">
+                     <textarea id="msg" class="textarea" placeholder="Message" type="text" name="Message"
+                        rows="8"></textarea>
+                  </div>
+                  <div class="col">
+                     <button class="send">Send</button>
+                  </div>
+               </form>
+            </div>
+         </section>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
-        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <footer>
+            <div class="container">
+               <div class="row-h2">
+                  <h3>Contact now</h3>
+                  <span>Darknumb@darknumb.io</span>
+               </div>
+               <div class="row-h2">
+                  <p>© 2020 - <span id="date"></span> All Rights Reserved. <a href="https://darknumb.io/">Darknumb</a>
+                  </p>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </div>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="./assets/js/app.js"></script>
 </body>
 
