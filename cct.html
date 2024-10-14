@@ -38,8 +38,8 @@
                 </ul>
             </nav>
         </header>
-        <div id="service" class="Services service-logs"
-            style="background-image: url(./assets/img/black-2.png); background-repeat: no-repeat; background-position: center; background-size: contain; background-attachment: fixed;">
+        
+        <div id="service" class="Services service-logs">
             <div class="container">
                 <div class="row-h2">
                     <h2>CC/TRACK/DUMP</h2>
@@ -232,23 +232,38 @@
         </div>
     </section>
 
-    <div class="contact contact-footer  layouts">
-        <div class="container">
-            <div class="row-h2 form-h2">
-                <h2>Give us a feedback</h2>
+
+    <div class="contact-footer  layouts">
+        <section class="contact">
+            <div class="container">
+                <div class="row-h2">
+                    <h2>Leave Your Testimonial</h2>
+                </div>
+                <form>
+                    <div class="col">
+                        <textarea id="msg" class="textarea" placeholder="Message" type="text" name="Message"
+                            rows="8"></textarea>
+                    </div>
+                    <div class="col">
+                        <button class="send">Send</button>
+                    </div>
+                </form>
             </div>
-            <form class="logs-cc" action="">
-                <div class="col">
-                    <input class="contactus" placeholder="Name" type="text" name="Name">
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row-h2">
+                    <h3>Contact now</h3>
+                    <span>Darknumb@darknumb.io</span>
                 </div>
-                <div class="col">
-                    <textarea class="textarea" placeholder="Message" type="text" name="Message" rows="8"></textarea>
+                <div class="row-h2">
+                    <p>© 2020 - <span id="date"></span> All Rights Reserved. <a
+                            href="https://darknumb.io/">Darknumb</a>
+                    </p>
                 </div>
-                <div class="col">
-                    <button class="send">Send</button>
-                </div>
-            </form>
-        </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"

@@ -10,7 +10,6 @@
     <script src="https://kit.fontawesome.com/5b702f1e5f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/resp.css">
 </head>
 
 <body>
@@ -37,8 +36,7 @@
             </nav>
         </header>
 
-        <section id="service" class="Services service-logs"
-            style="background-image: url(./assets/img/black-2.png); background-repeat: no-repeat; background-position: center; background-size: contain; background-attachment: fixed;">
+        <section id="service" class="Services service-logs">
             <div class="container">
                 <div class="row-h2">
                     <h2>SMHACH/TRACK/DUMP</h2>
@@ -119,24 +117,38 @@
         </section>
     </section>
 
-    <section class="contact contact-footer  layouts">
-        <div class="container">
-            <div class="row-h2 form-h2">
-                <h2>Give us a feedback</h2>
+    <div class="contact-footer">
+        <section class="contact">
+            <div class="container">
+                <div class="row-h2">
+                    <h2>Leave Your Testimonial</h2>
+                </div>
+                <form>
+                    <div class="col">
+                        <textarea id="msg" class="textarea" placeholder="Message" type="text" name="Message"
+                            rows="8"></textarea>
+                    </div>
+                    <div class="col">
+                        <button class="send">Send</button>
+                    </div>
+                </form>
             </div>
-            <form class="logs-cc" action="">
-                <div class="col">
-                    <input class="contactus" placeholder="Name" type="text" name="Name">
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row-h2">
+                    <h3>Contact now</h3>
+                    <span>Darknumb@darknumb.io</span>
                 </div>
-                <div class="col">
-                    <textarea class="textarea" placeholder="Message" type="text" name="Message" rows="8"></textarea>
+                <div class="row-h2">
+                    <p>© 2020 - <span id="date"></span> All Rights Reserved. <a
+                            href="https://darknumb.io/">Darknumb</a>
+                    </p>
                 </div>
-                <div class="col">
-                    <button class="send">Send</button>
-                </div>
-            </form>
-        </div>
-    </section>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
         integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
