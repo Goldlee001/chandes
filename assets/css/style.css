@@ -406,7 +406,7 @@ nav ul li a:hover {
 /** end Hosting section **/
 
 /** Services section **/
-.service-logs {
+.all-home-page, .service-logs {
     background-image: url("../img/whats.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -472,7 +472,7 @@ nav ul li a:hover {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 3s;
+    transition: all 2s;
 }
 
 .show {
@@ -1052,7 +1052,7 @@ table {
 
     /* hero-section start */
 
-    .service-logs {
+    .all-home-page, .service-logs {
         background-size: cover;
     }
 
@@ -1284,7 +1284,7 @@ table {
 
     /* Services start */
 
-    .service-logs {
+    .all-home-page, .service-logs {
         background-size: cover;
     }
 
@@ -1407,6 +1407,10 @@ table {
         font-size: 30px;
     }
 
+    .logo a {
+        padding-left: 20px;
+    }
+
     .menus {
         display: block;
         font-size: 30px;
@@ -1474,7 +1478,7 @@ table {
 
 
     .hero-h1 .text-bg h1 {
-        font-size: 45px;
+        font-size: 40px;
         padding-bottom: 0px;
     }
 
@@ -1484,15 +1488,15 @@ table {
     }
 
     .hero-h1 .text-bg p {
-        font-size: 15px;
+        font-size: 25px;
         line-height: 8px;
         padding: 0;
     }
 
     .hero-h1 .text-bg a {
-        width: 70%;
+        width: 100%;
         font-size: 18px;
-        padding: 10px 0;
+        padding: 10px 10px;
     }
 
 
@@ -1544,7 +1548,7 @@ table {
         margin-top: 0;
     }
 
-    .service-logs {
+    .all-home-page, .service-logs {
         background-size: cover;
     }
 
